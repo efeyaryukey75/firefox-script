@@ -3,9 +3,11 @@
 How to run;
 
 ##Set execute permission;
+
 chmod +x firefox-script.sh
 
 ##Run the sh file
+
 sudo ./firefox-script.sh
 
 
