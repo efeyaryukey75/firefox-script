@@ -37,4 +37,4 @@ X-MultipleArgs=false" > ~/.local/share/applications/firefox.desktop
 ##Başlatıcıya Çalıştırılabilir Yetkisi Verelim/Give The Executable Permission
 chmod 755 ~/.local/share/applications/firefox.desktop
 ##Komutların Tamamlandı/Commands Finished
-echo Komutlar Tamamlandı Uçbirim Çıktısını KOntrol Edin
+echo Komutlar Tamamlandı Uçbirim Çıktısını Kontrol Edin
