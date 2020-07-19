@@ -1,5 +1,5 @@
 #!/bin/bash
-##Firefox Türkçe 64 bit Son Sürüm İndirelim/Let's Download The Latest Version of Firefox 64 bit Turkish
+##Firefox Türkçe 64 bit Son Sürüm İndirelim/Let's Download The Latest Version of Firefox Turkish 64 bit 
 wget -O firefox.tar.bz2 "https://download.mozilla.org/?product=firefox-latest-ssl&os=linux64&lang=tr"  --no-check-certificate
 ##Sıkıştırılmış Dosyayı Çıkaralım/Extract The Downloaded File
 sudo tar xjf firefox.tar.bz2
@@ -7,7 +7,7 @@ sudo tar xjf firefox.tar.bz2
 sudo mv firefox /opt
 ##Başlatıcı Yolu Eğer Oluşmamışsa Oluşturalım/Create The .desktop Files Folder If It Didn't Created Yet
 mkdir -p ~/.local/share/applications
-##Başlatıcıyı Oluşturalım/Create The Runner
+##Başlatıcıyı Oluşturalım/Create The Launcher
 echo "
 [Desktop Entry]
 Categories=Network;WebBrowser;
@@ -34,7 +34,7 @@ X-KDE-RunOnDiscreteGpu=false
 X-KDE-SubstituteUID=false
 X-KDE-Username=
 X-MultipleArgs=false" > ~/.local/share/applications/firefox.desktop
-##Başlatıcıya Çalıştırılabilir Yetkisi Verelim/Give Permission To Run
+##Başlatıcıya Çalıştırılabilir Yetkisi Verelim/Give The Executable Permission
 chmod 755 ~/.local/share/applications/firefox.desktop
 ##Komutların Tamamlandı/Commands Finished
 echo Komutlar Tamamlandı Uçbirim Çıktısını KOntrol Edin
