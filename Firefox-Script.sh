@@ -36,5 +36,7 @@ X-KDE-Username=
 X-MultipleArgs=false" > ~/.local/share/applications/firefox.desktop
 ##Başlatıcıya Çalıştırılabilir Yetkisi Verelim/Give The Executable Permission
 chmod 755 ~/.local/share/applications/firefox.desktop
+##İndirdiğimiz Dosyayı Temizleyelim
+sudo rm -rf firefox.tar.bz2
 ##Komutların Tamamlandı/Commands Finished
 echo Komutlar Tamamlandı Uçbirim Çıktısını Kontrol Edin
