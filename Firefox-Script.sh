@@ -11,11 +11,11 @@ mkdir -p ~/.local/share/applications
 echo "
 [Desktop Entry]
 Categories=Network;WebBrowser;
-Comment[tr_TR]=Web'de gezin
 Comment=Surf on the web
+Comment[tr]=Web'de gezin
 Exec=/opt/firefox/firefox %u
-GenericName[tr_TR]=Web Tarayıcı
 GenericName=Web Browser
+GenericName[tr]=Web Tarayıcı
 Icon=firefox
 MimeType=text/html;image/png;image/jpeg;image/gif;application/xml;application/xml;application/xhtml+xml;application/vnd.mozilla.xul+xml;application/rss+xml;application/rdf+xml;
 Name[tr_TR]=Firefox
