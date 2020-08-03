@@ -2,6 +2,14 @@
 
 How to run;
 
+##Download the repo by git clone
+
+git clone https://github.com/efeyaryukey75/firefox-script.git
+
+##Enter the downloaded folder
+
+cd firefox-script
+
 ##Set execute permission;
 
 chmod +x Firefox-Script.sh
