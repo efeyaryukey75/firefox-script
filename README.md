@@ -16,7 +16,7 @@ chmod +x Firefox-Script.sh
 
 ##Run the sh file
 
-sudo ./Firefox-Script.sh
+./Firefox-Script.sh
 
 
 This is a bash script to download and run the latest Firefox 64 bit for Linux.
