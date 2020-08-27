@@ -6,10 +6,11 @@ sudo tar xjf firefox.tar.bz2
 ##Çıkan Dosyayı /opt Dizinine Taşıyalım/Move The Extracted File To The opt Folder
 sudo mv firefox /opt
 ##Başlatıcı Yolu Eğer Oluşmamışsa Oluşturalım/Create The .desktop Files Folder If It Didn't Created Yet
-mkdir -p ~/.local/share/applications
+mkdir -p ~/.local/share/applications/
 ##Başlatıcıyı Oluşturalım/Create The Launcher
-echo "
-[Desktop Entry]
+touch ~/.local/share/applications/firefox.desktop
+##Başlatıcı İçeriğini Yazalım/Write The Launcher's Content
+echo "[Desktop Entry]
 Categories=Network;WebBrowser;
 Comment=Surf on the web
 Comment[tr]=Web'de gezin
@@ -34,8 +35,6 @@ X-KDE-RunOnDiscreteGpu=false
 X-KDE-SubstituteUID=false
 X-KDE-Username=
 X-MultipleArgs=false" > ~/.local/share/applications/firefox.desktop
-##Başlatıcıya Çalıştırılabilir Yetkisi Verelim/Give The Executable Permission
-chmod 755 ~/.local/share/applications/firefox.desktop
 ##İndirdiğimiz Dosyayı Temizleyelim
 sudo rm -rf firefox.tar.bz2
 ##Komutların Tamamlandı/Commands Finished
