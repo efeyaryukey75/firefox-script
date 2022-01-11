@@ -3,8 +3,8 @@
 wget -O firefox.tar.bz2 "https://download.mozilla.org/?product=firefox-latest-ssl&os=linux64&lang=tr"  --no-check-certificate
 ##Sıkıştırılmış Dosyayı Çıkaralım/Extract The Downloaded File
 sudo tar xjf firefox.tar.bz2
-##Çıkan Dosyayı /opt Dizinine Taşıyalım/Move The Extracted File To The opt Folder
-sudo mv -f firefox /opt
+##Çıkan Dosyayı ~/.local/share/ yoluna Taşıyalım/Move The Extracted File To The ~/.local/share/ Folder
+sudo mv -f firefox ~/.local/share/
 ##Başlatıcı Yolu Eğer Oluşmamışsa Oluşturalım/Create The .desktop Files Folder If It Didn't Created Yet
 mkdir -p ~/.local/share/applications/
 ##Başlatıcıyı Oluşturalım/Create The Launcher
@@ -14,7 +14,7 @@ echo "[Desktop Entry]
 Categories=Network;WebBrowser;
 Comment=Surf on the web
 Comment[tr]=Web'de gezin
-Exec=/opt/firefox/firefox %u
+Exec=~/.local/share/firefox/firefox %u
 GenericName=Web Browser
 GenericName[tr]=Web Tarayıcı
 Icon=firefox
